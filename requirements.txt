@@ -1,0 +1,15 @@
+pywin32==306
+config==0.5.1
+psutil==6.0.0
+PyPDF2==3.0.1
+pyserial==3.5
+Pillow==10.4.0
+PyMySQL==1.1.1
+PyQt5==5.15.11
+docxtpl==0.19.1
+reportlab==4.2.5
+requests==2.32.3
+cx-Oracle==8.3.0
+pywinauto==0.6.8
+python-docx==1.1.2
+python-barcode==0.15.1
