@@ -40,6 +40,12 @@ First [download](https://www.python.org/downloads/), install and configure [pyth
 * Mac installation
 ---
 
+## Clone the Repository
+
+```bash
+git clone https://github.com/iam-ariful-islam/hematology-analyzer-lisv1.git
+```
+
 ## Notes
 The `requirements.txt` file, lists of all the Python libraries that my "**_hematology analyzer lis system_**" depends on and installs those packages from the file and for better use, configure the system by looking at the `notes.txt` name file:
 
