@@ -1,0 +1,226 @@
+Hematology Analyzer LIS is a software system that records, manages, updates and stores patient testing data for pathology laboratories, including receiving tests orders, sending orders to laboratory analyzers, tracking orders, results and quality control and transmitting results to print with graphs as pdf or docx.
+
+
+
+1. First download, install and configure latest version of python on your system If not installed.
+    https://www.python.org/downloads/
+
+2. Create a folder and set name. (Exp. folder_name "Project").
+
+3. Unzip "Hematology Analyzer LISv1.zip" file into "Project" folder.
+
+4. Open "Command Prompt" into "Project"  folder.
+
+5. Then create python virtual environment into "Project" folder.
+    python -m venv <virtual_folder_name>
+    Exp. virtual_folder_name "myvenv"
+    python -m venv myvenv
+
+6. Goto "myvenv" folder and active virtual environment.
+    cd myvenv/Script
+    activate
+
+7. Then go back from "myvenv" folder.
+    cd ..
+    cd ..
+
+8. Goto "Hematology Analyzer LISv1".
+    cd "Hematology Analyzer LISv1"
+
+9. Then install project dependencies
+    pip install -r requirements.txt
+
+10. After install all dependencies, run project.
+    python main_window.py
+
+
+
+You can also directly install all dependencies and run project.
+After open application, setup all application configuration.
+
+1. Click "Settings" button for open "Settings" page, then insert necessary information (Not mandatory):
+	1. Enter hospital name.
+	2. Enter hospital address.
+	3. Enter hospital mobile number.
+	4. Browse image file path for set image as application main wallpaper.
+		1. Set Background (Set browse image file as application wallpaper).
+		2. Full Path of Image (Show the browse image file full file path).
+	5. Floor No and Room No/Lab Number/ID.
+	6. C/E Calculate (Total Circulating Eosinophils Calculate, default = MON=70% and EOS=30%).
+	7. Write Hematology analyzer information message for printable report.
+	8. Set Hematology analyzer information message format.
+		1. Hide message.
+		2. Italic message all font.
+		3. Bold message all font.
+		4. Capital message all font.
+	9. Set Network (IP Address and Port) information and Serial(Communication Port/COM) information.
+	10. Set Hematology Analyzer model name (Exp. EH8300).
+	11. Set Hematology Analyzer option (Exp. 3-Part/5-Part/6-Part).
+	12. Set specimen type (Exp. Blood).
+	13. 1st Details (Show developer company information).
+	14. 2nd Details (Show hematology analyzer company information).
+	15. Institute Info (Show hospital information).
+	16. C/E Auto Calculate (Manually and Automatically Total Circulation Eosinophis Calculate).
+	17. HGB Format (Exp. 123/12.3).
+	18. Show WBC Number Format (Exp. 9600/9,600).
+	19. PLT Format (Exp. 4,50,000/450,000).
+	20. De-Active [5-Parts] (Exp. 3-Part/5-Part).
+	21. Auto ServiceID (Aumatically generate service id number).
+	22. HA Message (Show hematology analyzer message or information).
+	23. Show Lab No (Exp. 3rd[303]/Lab-123).
+	24. G-Colorscale (Gray colorscale report).
+	25. B-White Histogram (Black and White Histogram color).
+	26. Show HGB(%) (Show HGB percentage(%) value in report).
+	27. PID Barcode (Show patient id number as barcode in report).
+	28. Add Mr/Mrs (Automatically add Mr/Mrs in font of patient name in report).
+	29. Transparent Histogram Background (Remove or transparent histogram background color).
+	30. MCHC Format (Exp. 123/12.3).
+	31. Login Page (Show login page before enter application).
+	32. Box To Line (Show box/line in report).
+	33. Valid D-Path (Valid data path for histogram) Note: Not needed in updated version.
+	34. Reports Grouping (Print multiple report at a time from "Report Statement" page) Exp. StartID/1 to EndID/10.
+	35. EHeader Box (Extend header/report information box).
+	36. Network Communication (Communication type between host computer to analyzer).
+	37. Units Format (Show all result units in a format).
+	38. Units Bold Format (Show all result units font in bold).
+	39. Valided Age (Show valided age in report like-if year, month and days is present then show year, month and days otherwise not show).
+	40. Serial Port (Communication type between host computer to analyzer).
+	41. Hide ESR (Hide ESR(Westergren) parameters if ESR result value not present).
+	42. Result Send (Result send local database to server database using api).
+	43. Show Entry Date (Show patient entry date in report).
+	44. Report Format (Change some report design).
+	45. Patient Info Read from API (Patient information read for generate local report from server database using api).
+	46. Client Socket (Communication Type between host computer to analyzer).
+	47. Add Extra Database (If need read, write patient information from extra database).
+	48. MySQL DB (Use MySQL database for read, write patient information).
+
+	49. Bytes (Enter bytes size value for receive data from analyzer) Exp. 10240/b.
+	50. Header (Enter pixel size for up and down report header/patient information) Exp. if 800+ then up and if 800- then down.
+	51. Footer (Enter pixel size for up and down report footer/pathologist information) Exp. if 670+ then down and if 670- then up.
+	52. After complete all configuration clicked the "Save Info" button.
+
+	Note: No need clicked the "Save Info" button for check option. Close the "Settings" page.
+
+2. Click "Tools" icon for open extra settings page, then insert necessary information (Not mandatory) "Tools" <- "Settings":
+	1. 174, 182, 191 (RGB color code for application background color) Note: You can set any RGB color code or click that field for open color select page then select any color.
+	2. 0, 0, 0 (RGB color code for report font color) Note: You can set any RGB color code or click that field for open color select page then select any color.
+	3. %I:%M:%S%p (Time format for report) Note: %I=Hour, %M=Minute, %S=Second, %p=Ante/Post Meridiem.
+	4. %d.%m.%Y (%a) (Date format for report) Note: %d=Day, %m=Month, %Y=Year, %a=Weekday.
+	5. WBC Curve (Curve title) Note: You can change it and add anythings.
+	6. PLT Curve (Curve title) Note: You can change it and add anythings.
+	7. RBC Curve (Curve title) Note: You can change it and add anythings.
+		1. Hide Title (Hide curve title).
+		2. Italic Title (Curve title font in italic format).
+		3. Capital Title (Curve title font in capital letter).
+		4. Bold Title (Curve title font in bold format).
+	8. Add Comments title for report.
+		1. Hide comments title.
+		2. Bold comments title font.
+		3. Italic comments title font.
+		4. Title comments title font, that's means first character in capital letter.
+		5. Capital comments title all font are capital letter.
+	9. Text File (Generate text file of result values).
+	10. Company Info (Title of hematology analyzer company information).
+	11. Default (This is the report template option) Note: You can write template as "<file_name>.docx and put into "Components/templates" file then open application and select that template.
+	12. Font Size|M (Middle position font size that's means report result font size).
+	13. Add hematology analyzer company details. Note: You can add HTML tag into that information.
+	14. Add hematology analyzer LIS message or short note.
+	15. Font Size (Report font size).
+	16. Digit Point (Report result number of digit point after point(.) Exp. 12.34).
+	17. Line Space (Set space between line to line).
+	18. Result Size (Set result font size).
+	19. After complete all configuration clicked the "Save" button.
+
+	Note: No need clicked the "Save" button for check option. Close the "Extra Settings" page.
+
+3. Add Pathologist, click "Chemical Flask" icon button, then open the "Add Pathologist" and add info:
+	1. PT-(number) is the pathologist id number. You can add any id number for pathologist. Exp. PT-1/PT-A/ABC/XYZ. Note: You can search pathologist information by enter id for edit/update.
+	2. Add Pathologist's Name (Pathologist name of your hospital).
+	3. Add Description/Designation (Add pathologist description/designation or details).
+	4. Browse Signature (Browse pathologist signature for report if needed).
+		1. wpx x hpx (Set signature width and height. Exp. 230x120).
+		2. Print Signature (add signature of pathologist into report for print).
+	5. Click "Save" button for save pathologist information.
+	6. Select any pathologist information from table and then click "Delete" for delete pathologist information.
+	7. Select any pathologist information from table and then click "Active" for set and print pathologist information into report.
+	
+	Note: You can add unlimited pathologist information and Active for print only 4 at a time.
+
+4. After add pathologist close "Add Pathologist" page then if needed add doctor so, click "Doctor" icon and open "Add Doctor" page:
+	1. DT-(number) is the doctor id number. You can add any id number for doctor. Exp. DT-1/DT-A/ABC/XYZ. Note: You can search doctor information by enter id for edit/update.
+	2. Doctor's Information (Add referred  doctor's information or name with designation for report).
+	3. Select any doctor information from table and then click "Delete" for delete doctor information.
+
+	Note: You can add unlimited doctor information and you can also add doctor information from "Lab Report" page.
+
+5. Add or update reference values by click "Reference Values" button and open "Set Reference Values":
+	1. Add Parameter, Unit and Reference Value then click "Add" button.
+	2. Select any reference values from table then click "Delete" button if needed delete.
+	3. Double click of any reference value then edit/update information then click "Save" button if needed edit/update.
+	
+6. Open "Report Statement" page for show the report statement:
+	1. Patient ID/PID (Enter patient id/pid for search report).
+	2. Set date and press enter for show all date report.
+	3. Start PID to End PID for print report as group. Exp. 1 to 5 then print 1, 2, 3, 4, 5 this 5 report at a time.
+	4. Select any report from the table then click "Print" for print report.
+	5. Select any report from the table then click "Delete" for delete report.
+
+7. Open "API Setup" page by clicking "API" button:
+	1. API URL (You can add api url for send report result in api server).
+	2. Set date and press enter for show all date result.
+	3. Select db (Select database name for read patient information).
+	4. Username (Set username for database connection).
+	5. Password (Set password for database connection).
+	6. Host url (Set host url for database connection).
+	7. Database (Set database name for database connection).
+	8. Select query for read patient information.
+	9. After add all database information click "Add Info" button.
+	10. Add url then click "Add URL" button for set api url.
+	11. Select any report result from table then click "Send Data" for send through api url in the server.
+	12. Show help information by clicking "Help" button.
+
+8. Generate report by clicking "Generate Report" and show the page:
+	1. PatientID (Enter patient id and press enter for search patient report).
+	2. Patient Name (Enter patient name).
+	3. Select sex/gender of patient.
+	4. Enter patent age (Enter Y=Year, M=Month, D=Day) Note: You can enter any one or both.
+	5. Service ID (Enter service id if needed).
+	6. Bed No (Enter bed no if patient is admitted).
+	7. Set date and search all date report result.
+	8. DoctorID (Enter doctor id for search/add doctor).
+	9. Select/Search/Enter referred doctor information.
+	10. Set pathologist id as comma separeted for report (If needed help then click the help icon button).
+	11. Search PID (Search patient result report by entering id).
+	12. Show the result list by receiving analyzer, then click any result from table and if needed edit/update for generate patient report.
+	13. Write blood film/comments for patient if needed.
+	14. PATIENT NAME (Patient name as normal font or capitalize font) Exp. Patient/PATIENT.
+	15. DOCTOR NAME (Doctor name as normal font or capitalize font) Exp. Doctor/DOCTOR.
+	16. Auto Print (If you want to generate report and print, then click "Save|Print" button).
+	17. Graph (If you want to generate report with graph/histogram/curve).
+	18. If you want to delete any report then select report from table and click "Delete" button.
+	19. If you want to only save report information then click "Save" button.
+	20. If you want to generate report and view report with graph or without graph then click "View Report" button.
+	21. If you want to help about receiving analyzer result then click the "Info" icon button.
+
+	Note: Generate report and store in the date wise folder and view as pdf file (Exp. reports/12.10.2023/hematology_12345).
+
+9. Open admin page for authentication click "Admin" icon button and open Authentication page (Not mandatory if register at the first):
+	1. Enter admin password (Enter admin password for configuration and register application).
+	2. Enter product security key (Enter product security key for configuration and register application).
+
+	Note: You can see old and new computer information.
+
+
+
+Remember: After complete the all configuration then close the application and open application again.
+
+
+
+Note:
+----------------
+1. you can use directly or use after creating virtual environment.
+2. Default username & password is "admin" (If needed).
+3. If needed then update pip:
+   python.exe -m pip install --upgrade pip.
+
+Enjoy thyself with Project...! & If any query or any trouble then contact or see the video.
