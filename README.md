@@ -11,6 +11,7 @@
 
 **Pathology analyzer communication supporting serial and network protocols with simulates and data exchange with host system. `It will work on any hematology analyzer`.**
 
+
 ## Task Description
 This project fully customizable and dynamic and to build a Python and PyQT5-based desktop application and it's directly connect hematology analyzer with network or serial port communcation and receive data from analyzer then change or edit result and print. Printable report generated or design by python package [`reportlab`](https://www.reportlab.com/) library or use `Microsoft Office Docx` file. You can add pathologist information, doctor information with signature. Everyday create report folder with file name is current date and printed result stored as pdf. Already `100+ Diagnostic Medical Center or Hospital` use this. Here are some special features added.
 
@@ -21,6 +22,7 @@ This project fully customizable and dynamic and to build a Python and PyQT5-base
 * **Live data receive from analyzer**
 * **Use docx file template for result**
 * **Send/Receive data from database or server using API/Local**
+
 
 ## Task Requirements & Testing Environment
 This project was developed using the latest operating systems, software, and tools.
@@ -40,98 +42,89 @@ First [download](https://www.python.org/downloads/), install and configure [pyth
 * Mac installation
 ---
 
-## Clone the Repository
-
-```bash
-git clone https://github.com/iam-ariful-islam/hematology-analyzer-lisv1.git
-```
 
 ## Notes
 The `requirements.txt` file, lists of all the Python libraries that my "**_hematology analyzer lis system_**" depends on and installs those packages from the file and for better use, configure the system by looking at the `notes.txt` name file:
 
-```
+```bash
 pip install -r requirements.txt
-```
-
-### **or**
-
-```
+# or
 sudo pip install -r requirements.txt
 ```
 
-## Project screenshots
+
+## Screenshots
+Here are some screenshots of the `Hematology Analyzer LISv1` project:
+
 **Main Window**<br/>
-<img alt="main" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/main.png" />
-
+![main](screenshots/main.png)<br/>
 **Admin Page**<br/>
-<img alt="admin" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/admin.png" />
-
+![admin](screenshots/admin.png)<br/>
 **Login Page**<br/>
-<img alt="login" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/login.png" />
-
+![login](screenshots/login.png)<br/>
 **Change Login System**<br/>
-<img alt="change_login" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/change_login.png" />
-
+![change_login](screenshots/change_login.png)<br/>
 **Settings Page**<br/>
-<img alt="settings" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/settings.png" />
-
+![settings](screenshots/settings.png)<br/>
 **Extra Settings Page**<br/>
-<img alt="extra_settings" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/extra_settings.png" />
-
+![extra_settings](screenshots/extra_settings.png)<br/>
 **Pathologist Setup**<br/>
-<img alt="pathologist" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/pathologist.png" />
-
+![pathologist](screenshots/pathologist.png)<br/>
 **Doctor Setup**<br/>
-<img alt="doctor" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/doctor.png" />
-
+![doctor](screenshots/doctor.png)<br/>
 **Reference value Setup Page**<br/>
-<img alt="reference_value" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/reference_value.png" />
-
+![reference_value](screenshots/reference_value.png)<br/>
 **API Setup**<br/>
-<img alt="api_setup" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/api_setup.png" />
-
+![api_setup](screenshots/api_setup.png)<br/>
 **Report Page**<br/>
-<img alt="report_page" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/report_page.png" />
-
+![report_page](screenshots/report_page.png)<br/>
 **Machine Result**<br/>
-<img alt="machine_result" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/machine_result.png" />
-
+![machine_result](screenshots/machine_result.png)<br/>
 **Statement Page**<br/>
-<img alt="statement_page" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/statement_page.png" />
-
+![statement_page](screenshots/statement_page.png)<br/>
 **With Histogram-Reportlab**<br/>
-<img alt="with_graph" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/with_graph.png" />
-
+![with_graph](screenshots/with_graph.png)<br/>
 **Without Histogram-Reportlab**<br/>
-<img alt="without_graph" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/without_graph.png" />
-
+![without_graph](screenshots/without_graph.png)<br/>
 **With Histogram-Docx**<br/>
-<img alt="with_graph2" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/with_graph2.png" />
-
+![with_graph2](screenshots/with_graph2.png)<br/>
 **Without Histogram-Docx**<br/>
-<img alt="without_graph2" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/without_graph2.png" />
-
+![without_graph2](screenshots/without_graph2.png)<br/>
 **Report Folder**<br/>
-<img alt="report_folder" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/report_folder.png" />
-
+![report_folder](screenshots/report_folder.png)<br/>
 **Code Snapshot**<br/>
-<img alt="code_snapshot" src="https://github.com/iam-ariful-islam/Hematology-Analyzer-LISv1/blob/main/screenshots/code_snapshot.png" />
+![code_snapshot](screenshots/code_snapshot.png)<br/>
+
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions, suggestions, and feedback are always welcome! ❤️
+To contribute:
 
-Please make sure to update tests as appropriate.
+1. Fork the repository
+1. Create a new branch (`feature/new-feature`)
+1. Commit your changes
+1. Push and submit a Pull Request
+
+💬 You can also open an issue if you’d like to discuss a feature or report a bug.
+
 
 ## For more or connect with me
 
 <p align='center'>
-  <a href="https://github.com/iam-ariful-islam"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://twitter.com/am_ariful_islam"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://bd.linkedin.com/in/im-ariful-islam"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.facebook.com/jonakisoft.net/"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/iamx-ariful-islam"><img src="https://img.shields.io/badge/GitHub-md.%20ariful%20islam-black?style=for-the-badge&logo=github" /></a>&nbsp;&nbsp;
+  <a href="https://bd.linkedin.com/in/iamx-ariful-islam"><img src="https://img.shields.io/badge/LinkedIn-Md.%20Ariful%20Islam-blue?style=for-the-badge&logo=linkedin" /></a>&nbsp;&nbsp;
+  <a href="https://x.com/mx_ariful_islam"><img src="https://img.shields.io/badge/X-Md.%20Ariful%20Islam-black?style=for-the-badge&logo=x&logoColor=white" /></a>&nbsp;&nbsp;
+  <a href="https://www.facebook.com/iamx.ariful.islam/"><img src="https://img.shields.io/badge/Facebook-MD.%20Ariful%20Islam-%231877F2.svg?style=for-the-badge&logo=facebook&logoColor=white" /></a>
 </p>
+
 
 ## License
 
 The [MIT](https://choosealicense.com/licenses/mit/) License (MIT)
+
+
+## 💖 Thank You for Visiting!
+
+> “Good design is about making things simple yet significant”  
+> — *Md. Ariful Islam*
