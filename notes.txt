@@ -7,7 +7,7 @@ Hematology Analyzer LIS is a software system that records, manages, updates and 
 
 2. Create a folder and set name. (Exp. folder_name "Project").
 
-3. Unzip "Hematology Analyzer LISv1.zip" file into "Project" folder.
+3. Unzip "Hematology-Analyzer-LISv1.zip" file into "Project" folder.
 
 4. Open "Command Prompt" into "Project"  folder.
 
@@ -24,8 +24,8 @@ Hematology Analyzer LIS is a software system that records, manages, updates and 
     cd ..
     cd ..
 
-8. Goto "Hematology Analyzer LISv1".
-    cd "Hematology Analyzer LISv1"
+8. Goto "Hematology-Analyzer-LISv1".
+    cd "Hematology-Analyzer-LISv1"
 
 9. Then install project dependencies
     pip install -r requirements.txt
@@ -133,7 +133,7 @@ After open application, setup all application configuration.
 
 	Note: No need clicked the "Save" button for check option. Close the "Extra Settings" page.
 
-3. Add Pathologist, click "Chemical Flask" icon button, then open the "Add Pathologist" and add info:
+3. Add Pathologist information, click "Chemical Flask" icon button, then open the "Add Pathologist" and add info:
 	1. PT-(number) is the pathologist id number. You can add any id number for pathologist. Exp. PT-1/PT-A/ABC/XYZ. Note: You can search pathologist information by enter id for edit/update.
 	2. Add Pathologist's Name (Pathologist name of your hospital).
 	3. Add Description/Designation (Add pathologist description/designation or details).
@@ -146,12 +146,12 @@ After open application, setup all application configuration.
 	
 	Note: You can add unlimited pathologist information and Active for print only 4 at a time.
 
-4. After add pathologist close "Add Pathologist" page then if needed add doctor so, click "Doctor" icon and open "Add Doctor" page:
+4. Add Doctors information, click "Doctor" icon and open "Add Doctor" page:
 	1. DT-(number) is the doctor id number. You can add any id number for doctor. Exp. DT-1/DT-A/ABC/XYZ. Note: You can search doctor information by enter id for edit/update.
 	2. Doctor's Information (Add referred  doctor's information or name with designation for report).
 	3. Select any doctor information from table and then click "Delete" for delete doctor information.
 
-	Note: You can add unlimited doctor information and you can also add doctor information from "Lab Report" page.
+	Note: You can add unlimited doctor information and you can also add doctor information from "Lab Report" page. You can add multiple doctors’ information by browsing 'Exp. doctors.txt'
 
 5. Add or update reference values by click "Reference Values" button and open "Set Reference Values":
 	1. Add Parameter, Unit and Reference Value then click "Add" button.
@@ -222,5 +222,6 @@ Note:
 2. Default username & password is "admin" (If needed).
 3. If needed then update pip:
    python.exe -m pip install --upgrade pip.
+
 
 Enjoy thyself with Project...! & If any query or any trouble then contact or see the video.
